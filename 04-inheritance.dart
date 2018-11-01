@@ -14,7 +14,7 @@ class Employee extends Person{
   Employee(String firstName, String lastName, this.salary)
     : super(firstName, lastName);
   
-  void increateSalary(double amount) {
+  void increaseSalary(double amount) {
     this.salary += amount;
   }
   
@@ -28,7 +28,7 @@ void main() {
   print(employee.getFullName());
   print('Salary = ' + employee.salary.toString());
 
-  employee.increateSalary(1250.00);
+  employee.increaseSalary(1250.00);
 
   print('Salary = ' + employee.salary.toString());
 }
